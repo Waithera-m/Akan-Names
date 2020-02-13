@@ -1,6 +1,7 @@
 .jumbotron{background-color: aliceblue;
     text-align: center;  
 }
-.blockquote {
+.blockquote-reverse {
+  text-align:right;
   margin: 1 11rem;
 }
