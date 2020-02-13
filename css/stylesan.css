@@ -1,7 +1,8 @@
-.jumbotron{background-color: aliceblue;
+.jumbotron{
     text-align: center;  
     font-style: italic;
     font-family: 'Cormorant Garamond', serif;
+    background-image: url(https://bit.ly/2UJU8ix);
 }
 .blockquote-reverse {
   text-align:right;
@@ -13,4 +14,4 @@
   padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
-}
+ }
