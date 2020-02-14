@@ -3,17 +3,16 @@
   font-style: italic;
   font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
-  color:rgb(80, 74, 74);
+  color: rgb(75, 73, 73);
   background-image: url(https://bit.ly/2vuZ54d);
   background-size:cover;
   padding: 10rem 9rem;
   margin-bottom:10rem;
-  /* margin-top: -8rem; */
   border-radius: 0.5rem;
 }
 .blockquote-reverse {
   text-align:right;
-  margin: 1 11rem;
+  margin-bottom: -40px;
 }
 .container {
   width: 100%;
