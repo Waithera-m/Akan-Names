@@ -14,10 +14,28 @@
   text-align:right;
   margin-bottom: -40px;
 }
+body{
+  
+}
 .container {
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
+ }
+ table{
+   margin-left: -70px;
+ }
+ table, th, td {
+   border: 1px solid rgb(44, 43, 43);
+   border-collapse: collapse;
+   text-align:center;
+ }
+ th td{
+   padding:30px;
+  
+}
+ tr:nth-child(even){
+   background-color: rgb(170, 165, 165);
  }
