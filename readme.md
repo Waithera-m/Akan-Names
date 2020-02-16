@@ -18,7 +18,7 @@ You are free to suggest and improve the code. To makes your changes:
 * Create, add, commit, and push your changes to the branch
 * Create a pull request
 ## Demo
-You can view changes made to the website by visiting this working live demo: https://waithera-m.github.io/Programming-Portfolio/
+You can view changes made to the website by visiting this working live demo: https://waithera-m.github.io/Akan-Names/
 ### License
 *MIT license.*
 Copyright (c) 2020 **Waithera-m**
