@@ -37,17 +37,17 @@ function validateForm() {
     alert("Invalid date");
     return false;
   }
-  getAkanName();
+  getAkanName(sname);
 }
 function leapYear(year) {
   return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
 }
 // // Calculate day born
-function getAkanName() {
+function getAkanName(sname) {
   var birthYear = parseInt(document.getElementById("birthyear").value);
   var bDay = parseInt(document.getElementById("birthday").value);
   var month = parseInt(document.getElementById("month").value);
-  var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursaday", "Friday", "Saturday"];
+  var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   var cc = parseInt(document.getElementById("birthyear").value.slice(0, 2));
@@ -56,66 +56,51 @@ function getAkanName() {
   var mm = parseInt(document.getElementById("month").value);
   var dayOfTheWeek = parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
   var gender = parseInt(document.getElementById("gender").value);
-  var gender = parseInt(document.getElementById("gender").value);
-  console.log([dayOfTheWeek.toFixed, weekDays])
-  if (gender == 2) {
+  console.log([dayOfTheWeek,weekDays[dayOfTheWeek] ])
+  if (gender == 1) {
     if (weekDays[dayOfTheWeek] === "Sunday") {
-      document.getElementById("output").innerHTML = "You were born on Sunday. Your Akan name is " + maleNames[0] + "sname";
-      // return true;
+      document.getElementById("output").innerHTML = "You were born on Sunday. Your Akan name is " + maleNames[0] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[1]) {
-      document.getElementById("output").innerHTML = "You were born on Monday. Your Akan name is " + maleNames[1] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Monday") {
+      document.getElementById("output").innerHTML = "You were born on Monday. Your Akan name is " + maleNames[1] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[2]) {
-      document.getElementById("output").innerHTML = "You were born on Tuesday. Your Akan name is " + maleNames[2] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Tuesday") {
+      document.getElementById("output").innerHTML = "You were born on Tuesday. Your Akan name is " + maleNames[2] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[3]) {
-      document.getElementById("output").innerHTML = "You were born on Wednesday. Your Akan name is " + maleNames[3] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Wednesday") {
+      document.getElementById("output").innerHTML = "You were born on Wednesday. Your Akan name is " + maleNames[3] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[4]) {
-      document.getElementById("output").innerHTML = "You were born on Thursday. Your Akan name is " + maleNames[4] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Thursday") {
+      document.getElementById("output").innerHTML = "You were born on Thursday. Your Akan name is " + maleNames[4] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[5]) {
-      document.getElementById("output").innerHTML = "You were born on Friday. Your Akan name is " + maleNames[5] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Friday") {
+      document.getElementById("output").innerHTML = "You were born on Friday. Your Akan name is " + maleNames[5] + " " + sname;
     }
     else {
-      document.getElementById("output").innerHTML = "You were born on Saturday. Your Akan name is " + maleNames[6] + "sname";
-      // return true;
+      document.getElementById("output").innerHTML = "You were born on Saturday. Your Akan name is " + maleNames[6] + " " + sname;
     }
   }
-  if (gender === 3) {
-    if (dayOfTheWeek.toFixed === weekDays[0]) {
-      document.getElementById("output").innerHTML = "You were born on Sunday. Your Akan name is " + femaleNames[0] + "sname";
-      // return true;
+  if (gender === 2) {
+    if (weekDays[dayOfTheWeek] === "Sunday") {
+      document.getElementById("output").innerHTML = "You were born on Sunday. Your Akan name is " + femaleNames[0] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[1]) {
-      document.getElementById("output").innerHTML = "You were born on Monnday. Your Akan name is " + femaleNames[1] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Monday") {
+      document.getElementById("output").innerHTML = "You were born on Monnday. Your Akan name is " + femaleNames[1] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[2]) {
-      document.getElementById("output").innerHTML = "You were born on Tuesday. Your Akan name is " + femaleNames[2] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Tuesday") {
+      document.getElementById("output").innerHTML = "You were born on Tuesday. Your Akan name is " + femaleNames[2] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[3]) {
-      document.getElementById("output").innerHTML = "You were born on Wednesday. Your Akan name is " + femaleNames[3] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Wednesday") {
+      document.getElementById("output").innerHTML = "You were born on Wednesday. Your Akan name is " + femaleNames[3] + " " + sname;
     }
-    else if (dayOfTheWeek === weekDays[4]) {
-      document.getElementById("output").innerHTML = "You were born on Thursday. Your Akan name is " + femaleNames[4] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Thursday") {
+      document.getElementById("output").innerHTML = "You were born on Thursday. Your Akan name is " + femaleNames[4] + " " + sname;
     }
-    else if (dayOfTheWeek.toFixed === weekDays[5]) {
-      document.getElementById("output").innerHTML = "You were born on Friday. Your Akan name is " + femaleNames[5] + "sname";
-      // return true;
+    else if (weekDays[dayOfTheWeek] === "Friday") {
+      document.getElementById("output").innerHTML = "You were born on Friday. Your Akan name is " + femaleNames[5] + " " + sname;
     }
     else {
-      document.getElementById("output").innerHTML = "You were born on Saturday. Your Akan name is " + femaleNames[6] + "sname";
-      // return true;
+      document.getElementById("output").innerHTML = "You were born on Saturday. Your Akan name is " + femaleNames[6] + " " + sname;
     }
   }
 }
