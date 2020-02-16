@@ -1,4 +1,4 @@
-# Akan Names Calculator
+# Akan Name Calculator
 #### The web application uses users' input to determine their Akan day name, 16th Feb 2020
 #### By **Waithera-m**
 ## Description
