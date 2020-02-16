@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Akan Names</title>
+    <title>Akan Names Calculator</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/stylesan.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <script src="js/scripts.js"></script>
     <div class="jumbotron">
-      <h1><strong>Akan Names</strong></h1>
+      <h1><strong>Akan Names Calculator</strong></h1>
       <h2>Everything is in a name</h2>
       <blockquote class="blockquote-reverse">
         <p>“Names have power.”</p>
-        <footer>Rick Riordan <cite title="The Lightning Thief"> The Lightning Thief</footer>
+        <footer>Rick Riordan, <cite title="The Lightning Thief"> "The Lightning Thief"</footer>
       </blockquote>
     </div>
     <h1><strong>Akan Naming Customs</strong></h1>
     <img src="images/naming.jpg" alt="A image of a naming ceremony">
     <p>Naming customs vary across the continent, and the Akan people of
       Ghana arguably have one of the most fascinating ways of assigning names. Unlike other cultural groups where a child or adult's names
-    is determined by their time of day or ancestors, the Akan poeple use weekdays.</p>
-    <p>Thus, the your first name is a reflection of the day your were born. In addition to indicating
-      the day an individual was born, day names also offer useful glimpses into the soul and character of their bearers. So in this culture, you can judge a person by their name.</p>
+    is determined by the time of day they were born or their ancestors, the Akan people use weekdays.</p>
+    <p>Thus, the first name is a reflection of the day an individual was born. This name also offers useful glimpses into a person's soul and character. So in this culture, you can judge a person by their name.</p>
     <div class="container">
-      <h2 style="text-align: center;">Akan Names</h2>
     </div>
     <p>You can use the Akan name calculator below to learn your Akan name!</p>
     <container>
@@ -34,7 +31,7 @@
               <h2></strong>Akan Name Calculator</h2>
             </div>
             <div class="card-body" id="card-body">
-              <form id="card" action="index.html" method="POST" name="myForm"onsubmit="return validatedForm()";return false">
+              <form id="card" action="index.html" method="POST">
                 <div class="class-form">
                   <label for="sname">Please Enter Your Surname:</label><br>
                   <input type="text" class="fcontrol" id="sname" name="sname"><br>
@@ -86,7 +83,7 @@
               <h2>Results</h2>
             </div>
             <div class="card-body" id="results-panel">
-              <form  id="card" action="akan-names.html" method="POST">
+              <form  id="answer" action="akan-names.html" method="POST">
                 <div class="class-form">
                   <input type="textarea" class="fcontrol" id="output" name="output"><br>
                 </div>
@@ -99,5 +96,6 @@
         </div>
       </div>
     </container>
+    <script src="js/scripts.js" type="text/javascript"></script>
   </body>
 </html>
