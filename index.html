@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Akan Names Calculator</title>
+    <title>Akan Name Calculator</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/stylesan.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="jumbotron">
-      <h1><strong>Akan Names Calculator</strong></h1>
+      <h1><strong>Akan Name Calculator</strong></h1>
       <h2>Everything is in a name</h2>
       <blockquote class="blockquote-reverse">
         <p>“Names have power.”</p>
@@ -15,23 +15,30 @@
       </blockquote>
     </div>
     <h1><strong>Akan Naming Customs</strong></h1>
-    <img src="images/naming.jpg" alt="A image of a naming ceremony">
-    <p>Naming customs vary across the continent, and the Akan people of
-      Ghana arguably have one of the most fascinating ways of assigning names. Unlike other cultural groups where a child or adult's names
-    is determined by the time of day they were born or their ancestors, the Akan people use weekdays.</p>
-    <p>Thus, the first name is a reflection of the day an individual was born. This name also offers useful glimpses into a person's soul and character. So in this culture, you can judge a person by their name.</p>
+    <div class="row">
+      <div class="col-md-4"> 
+        <img src="images/naming.jpg" alt="A image of a naming ceremony" class="img img-rounded img-responsive">
+      </div>
+      <div class="col-md-8"> 
+        <p>Naming customs vary across the continent, and the Akan people of
+          Ghana arguably have one of the most fascinating ways of assigning names. Unlike other cultural groups where a child or adult's names
+        is determined by the time of day they were born or their ancestors, the Akan people use weekdays.</p>
+        <p>Thus, the first name is a reflection of the day an individual was born. This name also offers useful glimpses into a person's soul and character. So in this culture, you can judge a person by their name.</p>
+      </div>
+    </div>
+    
     <div class="container">
     </div>
     <p>You can use the Akan name calculator below to learn your Akan name!</p>
     <container>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8 col-sm-12">
           <div class="card">
             <div class="card-title" id="card">
               <h2></strong>Akan Name Calculator</h2>
             </div>
             <div class="card-body" id="card-body">
-              <form id="card" action="index.html" method="POST">
+              <form id="form" method="POST" onsubmit="event.preventDefault(); doSomething();">
                 <div class="class-form">
                   <label for="sname">Please Enter Your Surname:</label><br>
                   <input type="text" class="fcontrol" id="sname" name="sname"><br>
@@ -71,26 +78,28 @@
                   </select>
                 </div>
                 <div class="class-form">
-                  <button type="submit" value="submit">SUBMIT</button>
+                  <!-- <button type="submit" value="submit" class="btn btn-success" onsubmit="return doSomething()">SUBMIT</button> -->
+                  <button class="btn btn-primary">SUBMIT</button>
+                  <button class="btn btn-danger" type="reset">RESET</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4 col-sm-12">
           <div class="card">
             <div class="card-title" id="card-title">
               <h2>Results</h2>
             </div>
             <div class="card-body" id="results-panel">
-              <form  id="answer" action="akan-names.html" method="POST">
+              <div id="answer">
                 <div class="class-form">
                   <input type="textarea" class="fcontrol" id="output" name="output"><br>
                 </div>
                 <div  class="class-form">
-                  <button type="reset" value="reset">RESET</button>
+                  <button type="reset" value="reset" class="btn btn-danger">RESET</button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
