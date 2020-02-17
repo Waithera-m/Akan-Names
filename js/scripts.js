@@ -56,7 +56,7 @@ function getAkanName(sname) {
   var mm = parseInt(document.getElementById("month").value);
   var dayOfTheWeek = parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
   var gender = parseInt(document.getElementById("gender").value);
-  console.log([dayOfTheWeek,weekDays[dayOfTheWeek] ])
+  //console.log([dayOfTheWeek,weekDays[dayOfTheWeek] ])
   if (gender == 1) {
     if (weekDays[dayOfTheWeek] === "Sunday") {
       document.getElementById("output").innerHTML = "You were born on Sunday. Your Akan name is " + maleNames[0] + " " + sname;
