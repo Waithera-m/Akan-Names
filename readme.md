@@ -9,7 +9,7 @@ To use the application, users need internet access and web browsers, preferably 
 All known bugs have been fixed, but if you encounter any please notify the creator.
 ## Technologies Used
 * HTML - HTML dictates the structure of webpages. The markup language was used to create the form.
-* CSS - CSS determines the appearance of webpages. The styling language was used to create a jumbotron, panels, and add background image and colors.
+* CSS - CSS determines the appearance of webpages. The styling language was used to create a jumbotron, columns, and add background image and colors.
 * JavaScript - JavaScript determines the behavior of a webpage. The programming language was used to validate users' input, calculate the day they were born, and return accurate results.
 ## Support and contact details
 You are free to suggest and improve the code. To makes your changes:
